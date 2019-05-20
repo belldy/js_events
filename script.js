@@ -114,4 +114,4 @@ views.forEach(function (view, index) {
   	  enlarge(index);
   	}
   });
-});  
+});   
