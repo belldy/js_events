@@ -87,7 +87,7 @@ navbar.addEventListener("dblclick", onOff);
 
 // Exo 6
 
-let cards = document.querySelectorAll('.card');
+let cards = document.querySelectorAll('.card-text');
 console.log(cards);
 
 let views = document.querySelectorAll('.btn-success');
@@ -108,7 +108,7 @@ let enlarge = function(index) {
 
 views.forEach(function (view, index) {
   view.addEventListener("mouseover", function () {
-    if (images[index].style.width === "100%") {
+    if (cards[index].style.display === "block") {
       reduce(index); 
     } else {
   	  enlarge(index);
